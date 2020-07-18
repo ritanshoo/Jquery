@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="01_styles.css">
+    <title>jquery Basics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Basics</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+<!--    inline jquery-->
+    <h3>inline jquery</h3>
+    <div class="card" onclick="$(this).hide(2000)">
+        <div class="card-body bg-light">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aliquid amet aspernatur consectetur cum cupiditate fuga harum nisi obcaecati omnis possimus qui reiciendis rem tempore temporibus tenetur, vero voluptate voluptatibus!</p>
+            <p class="lead">itate fuga harum nisi obcaecati omnis possimus qui reiciendis rem tempore temporibus tenetur, vero voluptate voluptatibus!</p>
+        </div>
+    </div>
+
+<!--    internal jquery-->
+    <hr>
+
+    <h3>internal jquery</h3>
+    <div class="card" id="intr-jquery">
+        <div class="card-body bg-dark text-success">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aliquid amet aspernatur consectetur cum cupiditate fuga harum nisi obcaecati omnis possimus qui reiciendis rem tempore temporibus tenetur, vero voluptate voluptatibus!</p>
+            <p class="lead">itate fuga harum nisi obcaecati omnis possimus qui reiciendis rem tempore temporibus tenetur, vero voluptate voluptatibus!</p>
+        </div>
+    </div>
+
+<!--    external jquery-->
+    <hr>
+
+    <h3>external jquery</h3>
+    <button class="btn btn-outline-danger" id="danger-btn">hide</button>
+    <div class="card mt-3" id="dan-card">
+        <div class="card-body bg-danger text-white">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque dicta dolorum, ex, harum ipsa maiores molestiae, mollitia placeat provident repellendus saepe sunt tenetur? Eligendi iure sapiente voluptates. Alias autem deleniti dignissimos distinctio ducimus ea earum enim esse hic laboriosam maiores nam odit quam, quis quod, soluta veritatis voluptatem voluptatum.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+
+<script src="../jquery/jquery-3.4.1.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+<script src="01_app.js"></script>
+<script>
+    //internal jquery
+    $('#intr-jquery').click(function () {
+        $(this).hide(2000);
+    });
+</script>
+</body>
+</html>
+
