@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="05_styles.css">
+    <title>JQuery Examples</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Examples</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+    <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="card bg-light">
+                <div class="card-header bg-info text-center text-white">
+                    <h3>Like & dislike calculator</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 col-md-6 text-center">
+                            <a href="#" class="btn btn-danger btn-block " id="like-Btn">
+                                <h1>like</h1>
+                                <i class="fa fa-thumbs-up fa-3x"></i>
+                            </a>
+                            <div class="display mt-3 mb-0">
+                                <h1 class="text-center" id="like-display">0</h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 text-center ">
+                            <a href="#" class="btn btn-warning btn-block" id="dislike-Btn">
+                                <h1>dislike</h1>
+                                <i class="fa fa-thumbs-down fa-3x"></i>
+                            </a>
+                            <div class="display mt-3 mb-0">
+                                <h1 class="text-center" id="dislike-display">0</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <span class="display-4">Total : </span>
+                    <span class="display-4" id="count-total">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card  ">
+                    <div class="card-header bg-cyan font-weight-bold text-center">
+                        <h3>Select Your Hobbies</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="form-check">
+                            <input id="eating-check" type="checkbox" class="form-check-input" >
+                            <span class="form-check-label">Eating</span>
+                        </div>
+                        <div class="form-check">
+                            <input id="coding-check" type="checkbox" class="form-check-input" >
+                            <span class="form-check-label">Coding</span>
+                        </div>
+                        <div class="form-check">
+                            <input id="sleeping-check" type="checkbox" class="form-check-input" >
+                            <span class="form-check-label">Sleeping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card ">
+                    <div class="card-header bg-cyan font-weight-bold text-center">
+                        <h3>Detailed Hobbies</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="eating-card" class="card card-body bg-primary text-white mb-2 fade show d-none">
+                            <h4><i class="fa fa-check-circle"></i> Eating</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, rerum?</p>
+                        </div>
+                        <div id="coding-card" class="card card-body bg-warning text-white mb-2 fade show d-none">
+                            <h4><i class="fa fa-check-circle"></i> Coding</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, rerum?</p>
+                        </div>
+                        <div id="sleeping-card" class="card card-body bg-teal text-white mb-2 fade show d-none">
+                            <h4><i class="fa fa-check-circle"></i> Sleeping</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, rerum?</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Please find your Detailed Selection Here</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../jquery/jquery-3.4.1.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="05_app.js"></script>
+</body>
+</html>
+
