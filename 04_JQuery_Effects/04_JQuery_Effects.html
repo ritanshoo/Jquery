@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="04_styles.css">
+    <title>JQuery Effects</title>
+</head>
+<body>
+
+<div id="mouse-div">
+
+</div>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Effects</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- hide , show , Fadein , FadeOut , FadeToggle , SlideDown , SlideUp -->
+    <div class="row text-center">
+        <div class="col-12">
+            <h3 class="display-4 ">hide, show & toggle</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <button class="btn btn-success" id="btn-hide-show">hide</button>
+            <div class="card" id="display-hide-show">
+                <div class="card-body bg-dark text-white">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quas, veniam. Accusamus ad beatae corporis deleniti dolorem eum hic itaque magni molestiae, nam neque nulla perferendis praesentium provident qui quos recusandae repellendus, repudiandae saepe sint sunt velit voluptate voluptates voluptatum.</p>
+                    <p class="lead">deleniti dolorem eum hic itaque magni molestiae, nam neque nulla perferendis praesentium provident qui quos recusandae repellendus, repudiandae saepe sint sunt velit voluptate voluptates voluptatum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <button class="btn btn-danger" id="btn-toggle">hide</button>
+            <div class="card" id="display-toggle">
+                <div class="card-body bg-dark text-white">
+                    <p class="lead">deleniti dolorem eum hic itaque magni molestiae, nam neque nulla perferendis praesentium provident qui quos recusandae repellendus, repudiandae saepe sint sunt velit voluptate voluptates voluptatum.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nostrum! ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto blanditiis commodi corporis doloremque eaque est id minus nam numquam placeat praesentium quae quaerat quia, sed sequi tempore. Doloribus ipsum sit vitae voluptate. A accusamus adipisci deserunt eius enim quos!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row text-center mt-5">
+        <div class="col-12">
+            <h3 class="display-4 ">fadeIn, fadeOut & fadeToggle</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <button class="btn btn-success" id="btn-fadeIn">hide</button>
+            <div class="card" id="display-fadeIn">
+                <div class="card-body bg-dark text-white">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quas, veniam. Accusamus ad beatae corporis deleniti dolorem eum hic itaque magni molestiae, nam neque nulla perferendis praesentium provident qui quos recusandae repellendus, repudiandae saepe sint sunt velit voluptate voluptates voluptatum.</p>
+                    <p class="lead">deleniti dolorem eum hic itaque magni molestiae, nam neque nulla perferendis praesentium provident qui quos recusandae repellendus, repudiandae saepe sint sunt velit voluptate voluptates voluptatum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <button class="btn btn-danger" id="btn-fadeToggle">hide</button>
+            <div class="card" id="display-fadeToggle">
+                <div class="card-body bg-dark text-white">
+                    <p class="lead">deleniti dolorem eum hic itaque magni molestiae, nam neque nulla perferendis praesentium provident qui quos recusandae repellendus, repudiandae saepe sint sunt velit voluptate voluptates voluptatum.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nostrum! ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto blanditiis commodi corporis doloremque eaque est id minus nam numquam placeat praesentium quae quaerat quia, sed sequi tempore. Doloribus ipsum sit vitae voluptate. A accusamus adipisci deserunt eius enim quos!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../jquery/jquery-3.4.1.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="04_app.js"></script>
+</body>
+</html>
+
